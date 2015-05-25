@@ -44,8 +44,6 @@ submission[,2:10] <- 0
 
 #------------------running model-------------------
 
-#best is : Training classification error: 0.02413724
-#5/18/2015
 #model@model$params$epochs
 
 for(i in 1:10){

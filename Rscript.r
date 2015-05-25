@@ -7,9 +7,10 @@ library(reshape2)
 library(DEEPR)
 
 #max cpus
-localH2O = h2o.init(ip = "localhost", port = 54321, startH2O = TRUE,nthreads=-1)
-#only 2 cpus
-localH2O = h2o.init(ip = "localhost", port = 54321, startH2O = TRUE)
+localH2O = h2o.init(ip = "localhost", port = 54321, startH2O = TRUE, nthreads=-1)
+
+#only 2 cpus:
+#localH2O = h2o.init(ip = "localhost", port = 54321, startH2O = TRUE)
 
 train = read.csv("train.csv", header = TRUE, stringsAsFactors = FALSE)
 
